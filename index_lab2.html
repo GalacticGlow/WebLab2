@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Список покупок</title>
+    <link rel="stylesheet" type="text/css" href="style_lab2.css" />
+</head>
+<body>
+  <div class="main-layout">
+    <div class="container">
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Назва товару" />
+        <button class="search-bar-button" type="submit" data-tooltip="Додати товару">Додати</button>
+      </div>
+
+      <!-- Item 1 (Purchased) -->
+      <div class="item">
+        <label class="item-name not-purchased" contenteditable="true">Помідори</label>
+        <div class="quantity-controls not-purchased">
+          <button class="qty-btn-minus not-purchased" data-tooltip="Зменшити кількість">−</button>
+          <label class="quantity">2</label>
+          <button class="qty-btn-plus not-purchased" data-tooltip="Збільшити кількість">+</button>
+        </div>
+        <div class="actions not-purchased">
+          <button class="status-btn not-purchased" data-tooltip="Змінити статус">Не куплено</button>
+          <button class="delete-btn not-purchased" data-tooltip="Видалити">×</button>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item">
+        <label class="item-name" contenteditable="true">Печиво</label>
+        <div class="quantity-controls">
+          <button class="qty-btn-minus" data-tooltip="Зменшити кількість">−</button>
+          <label class="quantity">2</label>
+          <button class="qty-btn-plus" data-tooltip="Збільшити кількість">+</button>
+        </div>
+        <div class="actions">
+          <button class="status-btn" data-tooltip="Змінити статус">Куплено</button>
+          <button class="delete-btn" data-tooltip="Видалити">×</button>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="item">
+        <label class="item-name" contenteditable="true">Сир</label>
+        <div class="quantity-controls">
+          <button class="qty-btn-minus disabled" data-tooltip="Зменшити кількість">−</button>
+          <label class="quantity">1</label>
+          <button class="qty-btn-plus" data-tooltip="Збільшити кількість">+</button>
+        </div>
+        <div class="actions">
+          <button class="status-btn" data-tooltip="Змінити статус">Куплено</button>
+          <button class="delete-btn" data-tooltip="Видалити">×</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <h3 class="sidebar-titles">Залишилося</h3>
+      </div>
+      <div class="sidebar-section">
+        <div class="tag-container">
+            <span class="tag">Печиво <span class="count">2</span></span>
+            <span class="tag">Сир <span class="count">1</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-titles">Куплено</h3>
+      </div>
+      <div class="sidebar-section">
+        <div class="tag-container">
+            <span class="tag purchased">Помідори <span class="count purchased">2</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="badge">
+        <div class="badge-content">
+            <span class="badge-title">BuyList</span>
+            <span class="badge-author">Created by: <br> <span class="my-name">Гулідов Артем</span></span>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
