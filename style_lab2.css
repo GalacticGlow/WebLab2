@@ -324,7 +324,6 @@ body {
             opacity: 1;
         }
 
-        /* Print style */
         @media print {
         .badge {
             background-color: white !important;
@@ -382,7 +381,6 @@ body {
         margin-top: 10px;
     }
 
-    /* Show on hover */
     [data-tooltip]:hover::after {
         bottom: 45px;
         opacity: 1;
